@@ -19,13 +19,13 @@ def line_plot():
         y.append(i**2)
 
     fig = plt.figure()
-    fig.suptitle('Grafico Ejemplo 1 Y=X**2', fontsize=12)
+    fig.suptitle('Grafico Ejemplo 1 Y=X^2', fontsize=12)
     ax = fig.add_subplot()
 
-    ax.plot(x, y, c='darkgreen', marker='^', label='función:y=x**2')
+    ax.plot(x, y, c='blue', marker='|', label='función:y=x^2')
     ax.legend()
     ax.grid()
-    ax.set_facecolor('whitesmoke')
+    ax.set_facecolor('white')
     plt.show()
 
 
@@ -46,6 +46,18 @@ if __name__ == '__main__':
     for i in x:
         y.append(i**2)
 
+    
+    fig = plt.figure()
+    ax = fig.add_subplot()
+
+    ax.plot(x, y, c='red', marker='|', label='y = x^2')
+    ax.legend()
+    ax.grid()
+    ax.set_facecolor('white')
+    fig.suptitle('Gráfico 2: Y = X^2', fontsize=12)
+
+    plt.show()
+
     # Alumno: Crear una "figura" y crear un "ax" con add_subplot
     # Graficar el "line plot" de "y" en función de "x"
 
@@ -56,4 +68,4 @@ if __name__ == '__main__':
 
     line_plot()
 
-    print("terminamos")
+    print("Fin del Programa")
